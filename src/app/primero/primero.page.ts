@@ -6,15 +6,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./primero.page.scss'],
 })
 export class PrimeroPage implements OnInit {
-  resultado :number;
+  apruebo :number;
+  rechazo :number;
+  otro :number;
   constructor() { }
 
   ngOnInit() {
-    this.resultado = 0;
+    this.apruebo = 0;
+    this.rechazo = 0;
+    this.otro = 0;
   }
-  contador()
+  contadorApruebo()
   {
-    this.resultado = this.resultado + 1;
+    this.apruebo = this.apruebo + 1;
+  }
+  contadorRechazo()
+  {
+    this.rechazo = this.rechazo + 1;
+  }
+  contadorOtro()
+  {
+    this.otro = this.otro + 1;
   }
 
 }
