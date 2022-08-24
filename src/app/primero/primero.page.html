@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Votaciones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button (click)="contadorApruebo()" color="success">
+    <ion-icon name="checkmark-outline"></ion-icon>Apruebo
+  </ion-button>
+  <ion-button (click)="contadorRechazo()" color="danger">
+    <ion-icon slot="icon-only" name="close-outline"></ion-icon>Rechazo
+  </ion-button>
+  <br>
+  <ion-button (click)="contadorOtro()" color="medium" expand="block">
+    <ion-icon slot="icon-only" name="ban-outline"></ion-icon>Nulo/Blanco
+  </ion-button>
+  <br>
+  <h1>Los resultados son:</h1>
+  <h3>Apruebo    : {{ apruebo }}</h3>
+  <h3>Rechazo    : {{ rechazo }}</h3>
+  <h3>Nulo/Blanco: {{ otro }}</h3>
+
+
+</ion-content>

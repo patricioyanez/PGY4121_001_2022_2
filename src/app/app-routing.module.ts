@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'segunda-pagina',
+    redirectTo: 'primero',
     pathMatch: 'full'
   },
   {
@@ -22,6 +22,10 @@ const routes: Routes = [
   {
     path: 'cuatro',
     loadChildren: () => import('./cuatro/cuatro.module').then( m => m.CuatroPageModule)
+  },
+  {
+    path: 'primero',
+    loadChildren: () => import('./primero/primero.module').then( m => m.PrimeroPageModule)
   },
 ];
 
