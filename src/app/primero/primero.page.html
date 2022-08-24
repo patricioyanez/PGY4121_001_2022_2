@@ -24,11 +24,19 @@
     </ion-button>
   </ion-col>
 </ion-row>
-  <br>
-  <h1>Los resultados son:</h1>
-  <h3>Apruebo    : {{ apruebo }}</h3>
-  <h3>Rechazo    : {{ rechazo }}</h3>
-  <h3>Nulo/Blanco: {{ otro }}</h3>
-
+<ion-row>
+  <ion-col size="12"><h1>Los resultados son:</h1></ion-col>
+  <ion-col size="6">Apruebo</ion-col>
+  <ion-col size="6">{{ apruebo }}</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col size="6">Rechazo</ion-col>
+  <ion-col size="6">{{ rechazo }}</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col size="6">Nulo/Blanco:</ion-col>
+  <ion-col size="6">{{ otro }}</ion-col>
+</ion-row>
+  
 
 </ion-content>
