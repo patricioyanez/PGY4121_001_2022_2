@@ -14,11 +14,43 @@
   </ion-header>
 
   <div id="container">
+    <ion-list>
+      <ion-radio-group value="biff">
+        <ion-list-header>
+          <ion-label>Sistemas Operativos</ion-label>
+        </ion-list-header>
+    
+        <ion-item>
+          <ion-label>IOs</ion-label>
+          <ion-radio slot="start" value="biff"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Android</ion-label>
+          <ion-radio slot="start" value="griff"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Win Phone</ion-label>
+          <ion-radio slot="start" value="buford"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+
     <ion-button color="primary" shape="round"  expand="block">Botón</ion-button><br>
     <ion-button color="primary">Botón 2</ion-button><br>
     <ion-button color="light"  size="small">Botón 3</ion-button><br>
     <ion-button color="dark"  size="large">Botón 4</ion-button><br>
-    
+    <ion-button expand="full" fill="outline">Botón 5</ion-button><br>
+    <ion-button>
+      <ion-icon slot="start" name="arrow-back-circle-outline"></ion-icon>
+      Volver
+    </ion-button>
+    <ion-button>
+      <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>
+      Avanzar
+    </ion-button>
+    <br>
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>

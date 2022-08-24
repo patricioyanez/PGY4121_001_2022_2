@@ -1,9 +1,23 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>segundaPagina</ion-title>
+    <ion-title>segunda Página</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-item>
+    <ion-label position="floating">Ingrese su nombre</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Ingrese su apellido</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
 
 </ion-content>
+
+<ion-footer>
+  <ion-button expand="full" (click)="onClick()">
+    <ion-icon name="add"></ion-icon>
+  </ion-button>
+</ion-footer>
