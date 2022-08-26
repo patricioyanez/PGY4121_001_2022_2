@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input #nombre></ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-label position="floating">Apellido</ion-label>
+    <ion-input #apellido></ion-input>
+  </ion-item>
+  <ion-item>
+  <ion-label position="floating">Correo</ion-label>
+    <ion-input #correo></ion-input>
+  </ion-item>
+  <div *ngIf="mensaje;">
+    <h3 id="error">Mensaje: {{ mensaje }}</h3>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-button (click)="grabar(nombre, apellido, correo)" color="danger">
+      <ion-icon slot="icon-only" name="people-outline"></ion-icon>
+    </ion-button>
+    <ion-button (click)="limpiar()" color="light" slot="end">
+      <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
+

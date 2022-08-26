@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./primero.page.scss'],
 })
 export class PrimeroPage implements OnInit {
-  apruebo :number;
-  rechazo :number;
-  otro :number;
+  apruebo : number;
+  rechazo : number;
+  otro    : number;
   constructor() { }
 
   ngOnInit() {
@@ -28,5 +28,5 @@ export class PrimeroPage implements OnInit {
   {
     this.otro = this.otro + 1;
   }
-
+// type script microsoft
 }

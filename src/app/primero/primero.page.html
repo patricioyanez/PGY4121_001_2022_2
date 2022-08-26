@@ -1,6 +1,9 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Votaciones</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -11,7 +14,7 @@
       <ion-icon name="checkmark-outline"></ion-icon>Apruebo
     </ion-button>
   </ion-col>
-  <ion-col size="6">
+  <ion-col size="6" >
     <ion-button (click)="contadorRechazo()" color="danger">
       <ion-icon slot="icon-only" name="close-outline"></ion-icon>Rechazo
     </ion-button>
