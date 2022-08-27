@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Listado</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>Personas</h1>
+  <div *ngFor="let persona of listado">
+    {{ persona.id}}
+    {{ persona.nombre}}
+    {{ persona.direccion}}
+    <br>------------
+  </div>
+</ion-content>
