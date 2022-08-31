@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>listado2</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="ingresar()" color="primary">
+        <ion-icon name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngFor="let persona of personas" [routerLink]="['/' + persona.id]">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img [src]="persona.foto" />
+      </ion-avatar>
+      <ion-label>{{ persona.nombre }}</ion-label>
+    </ion-item>
+  </div>
+</ion-content>

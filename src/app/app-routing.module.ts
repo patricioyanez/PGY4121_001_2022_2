@@ -27,6 +27,14 @@ const routes: Routes = [
     path: 'listado',
     loadChildren: () => import('./listado/listado.module').then( m => m.ListadoPageModule)
   },
+  {
+    path: 'listado2',
+    loadChildren: () => import('./listado2/listado2.module').then( m => m.Listado2PageModule)
+  },
+  {
+    path: ':id',
+    loadChildren: () => import('./detalle/detalle.module').then( m => m.DetallePageModule)
+  },
 ];
 
 @NgModule({
