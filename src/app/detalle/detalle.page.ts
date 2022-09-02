@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { AlertController } from '@ionic/angular';
+import { AlertController, ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-detalle',
@@ -11,7 +11,8 @@ export class DetallePage implements OnInit {
   personas = [];
   persona : any;
   constructor(private activatedRouter: ActivatedRoute,
-              private alertControl : AlertController,
+              private alertController : AlertController,
+              private toastController : ToastController,
               private router : Router) {
     this.personas = [
       {
@@ -41,9 +42,29 @@ export class DetallePage implements OnInit {
     this.activatedRouter.paramMap.subscribe(paramMap => {
       const id = paramMap.get('id');
       console.log(id);
-      this.persona = this.personas.find(x => {return x.id = Number(id)});
+      this.persona = this.personas.find(x => {return x.id == Number(id)});
       console.log(this.persona);
     })
   }
 
+  async si()
+  {
+      const toast = await this.toastController.create({
+        message: 'Te agrado esta persona',
+        icon: 'checkmark-circle-outline',
+        duration: 2000
+      });
+      toast.present();
+  }
+  async no()
+  {
+      const alert = await this.alertController.create({
+        header: 'Atención',
+        subHeader: 'Mensaje importante',
+        message: 'No te agrado esta persona.',
+        buttons: ['Aceptar']
+      });
+    
+      await alert.present();
+  }
 }
