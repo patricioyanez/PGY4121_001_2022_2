@@ -32,6 +32,10 @@ const routes: Routes = [
     loadChildren: () => import('./listado2/listado2.module').then( m => m.Listado2PageModule)
   },
   {
+    path: 'promedio',
+    loadChildren: () => import('./promedio/promedio.module').then( m => m.PromedioPageModule)
+  },
+  {
     path: ':id',
     loadChildren: () => import('./detalle/detalle.module').then( m => m.DetallePageModule)
   },
