@@ -4,6 +4,8 @@ camara y capacitor
 Video tutorial de apoyo:
 https://www.youtube.com/watch?v=K7sDIr07xMs
 
+
+https://capacitorjs.com/docs/updating/4-0
 npm i -D @capacitor/cli@latest
 npm install @capacitor/camera   
 npx cap sync
@@ -13,3 +15,7 @@ npm install @ionic/pwa-elements
 
 lanzar en Android
 ionic capacitor run android  
+
+
+Otros
+https://capacitorjs.com/docs/getting-started/with-ionic
