@@ -1,7 +1,8 @@
 
 
 camara y capacitor
-
+Video tutorial de apoyo:
+https://www.youtube.com/watch?v=K7sDIr07xMs
 
 npm i -D @capacitor/cli@latest
 npm install @capacitor/camera   
