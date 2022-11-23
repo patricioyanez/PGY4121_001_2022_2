@@ -9,12 +9,13 @@ export class PrimeroPage implements OnInit {
   apruebo : number;
   rechazo : number;
   otro    : number;
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {
     this.apruebo = 0;
     this.rechazo = 0;
-    this.otro = 0;
+    this.otro = 0; 
+  }
+
+  ngOnInit() {
   }
   contadorApruebo()
   {
@@ -27,6 +28,11 @@ export class PrimeroPage implements OnInit {
   contadorOtro()
   {
     this.otro = this.otro + 1;
+  }
+
+  sumar(n1: number, n2:number)
+  {
+    return n1+n2;
   }
 // type script microsoft
 }
